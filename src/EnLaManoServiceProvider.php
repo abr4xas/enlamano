@@ -2,7 +2,6 @@
 
 namespace Abr4xas\EnLaMano;
 
-use Abr4xas\EnLaMano\EnLaMano;
 use Illuminate\Support\ServiceProvider;
 
 class EnLaManoServiceProvider extends ServiceProvider

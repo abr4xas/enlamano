@@ -13,8 +13,8 @@ class EnLaMano
 
     public function __construct()
     {
-        $this->baseUri  = config('enlamano.base_uri');
-        $this->user     = config('enlamano.user');
+        $this->baseUri = config('enlamano.base_uri');
+        $this->user = config('enlamano.user');
         $this->password = config('enlamano.password');
     }
 
@@ -31,13 +31,13 @@ class EnLaMano
             ->withHeaders([
                 'Content-Type' => 'application/json',
             ])->post($this->baseUri, [
-                'Documento'     => $params['document'],
+                'Documento' => $params['document'],
                 'TipoDocumento' => $params['document_type'],
-                'DatosEntrada'  => [
-                    'Salario'   => $params['salary'],
-                    'Sexo'      => $params['gender'],
-                    'Region'    => $params['region'],
-                    'Edad'      => $params['age'],
+                'DatosEntrada' => [
+                    'Salario' => $params['salary'],
+                    'Sexo' => $params['gender'],
+                    'Region' => $params['region'],
+                    'Edad' => $params['age'],
                 ],
             ]);
 
