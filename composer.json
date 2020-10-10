@@ -49,7 +49,7 @@
                 "Abr4xas\\EnLaMano\\EnLaManoServiceProvider"
             ],
             "aliases": {
-                "EnLaMano": "Abr4xas\\EnLaMano\\EnLaManoFacade"
+                "EnLaMano": "Abr4xas\\EnLaMano\\EnLaMano"
             }
         }
     },

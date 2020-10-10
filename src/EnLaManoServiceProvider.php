@@ -29,8 +29,8 @@ class EnLaManoServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/enlamano.php', 'enlamano');
 
-        $this->app->singleton('EnLaMano', function () {
-            return new EnLaMano();
+        $this->app->bind('enlamano', function () {
+            return new EnLaManoService();
         });
     }
 }

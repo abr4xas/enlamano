@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions\EnLaManoExceptions;
+namespace Abr4xas\EnLaMano\EnLaManoExceptions;
 
 use Exception;
 
